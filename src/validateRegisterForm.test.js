@@ -36,7 +36,7 @@ describe(`Function 'validateRegisterForm':`, () => {
 
   it(`should return invalid message for both incorrect email
     and password`, () => {
-    const result = validateRegisterForm('test@com', 'ssword1');
+    const result = validateRegisterForm('testcom', 'sswo');
 
     expect(result).toEqual({
       code: 500, message: 'Password and email are invalid.',
